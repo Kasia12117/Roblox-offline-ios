@@ -5,7 +5,7 @@ extends Node3D
 
 const NovetusLauncherScript = preload("res://scripts/novetus_launcher.gd")
 
-@export var map_path: String = "res://REAL.rbxlx"
+@export var map_path: String = "res://maps/ErikCassel_Jetpack_2007.rbxlx"
 @export var map_root: Node3D
 @export var player: CharacterBody3D
 @export var map_option_button: OptionButton
@@ -18,9 +18,8 @@ var parser: RBXLParser
 var novetus: RefCounted
 
 const MAP_PRESETS: Array[Dictionary] = [
-	{"name": "Work at a Pizza Place (2017)", "path": "res://REAL.rbxlx"},
-	{"name": "David Baszucki - 8 Towers (2007)", "path": "res://maps/DavidBaszucki_8Towers_2007.rbxlx"},
 	{"name": "Erik Cassel - Jetpack (2007)", "path": "res://maps/ErikCassel_Jetpack_2007.rbxlx"},
+	{"name": "David Baszucki - 8 Towers (2007)", "path": "res://maps/DavidBaszucki_8Towers_2007.rbxlx"},
 	{"name": "Shedletsky - Moon Mission (2007)", "path": "res://maps/Shedletsky_Moon_2007.rbxlx"},
 	{"name": "Classic Crossroads (2017)", "path": "res://maps/crossroads_2017.rbxl"},
 	{"name": "Obby & Playground", "path": "res://maps/sample_2017_place.rbxl"}

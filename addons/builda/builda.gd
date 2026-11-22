@@ -28,6 +28,8 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	if OS.has_feature("web"):
 		JavaScriptBridge.eval("window.__buildaResults = window.__buildaResults || {}; window.__buildaEvents = window.__buildaEvents || [];", true)
+		runtime_ready()
+		print("[Builda] Runtime ready handshake requested")
 		_bind_events()
 	set_process(true)
 
