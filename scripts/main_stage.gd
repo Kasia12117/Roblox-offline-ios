@@ -5,7 +5,7 @@ extends Node3D
 
 const NovetusLauncherScript = preload("res://scripts/novetus_launcher.gd")
 
-@export var map_path: String = "res://maps/ErikCassel_Jetpack_2007.rbxlx"
+@export var map_path: String = "res://maps/Shedletsky_Moon_2007.rbxlx"
 @export var map_root: Node3D
 @export var player: CharacterBody3D
 @export var map_option_button: OptionButton
